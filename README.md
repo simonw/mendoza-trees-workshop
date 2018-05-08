@@ -23,7 +23,7 @@ I downloaded a [CSV file full of trees](https://ckan.ciudaddemendoza.gov.ar/data
 I created the Django project like this:
 
     $ django-admin startproject mendoza_trees
-    $ cd trees.py
+    $ cd mendoza_trees
     $ ./manage.py startapp trees
 
 Then I added the following to `trees/models.py`:
@@ -170,7 +170,7 @@ Whereas the same thing using `.select_related()` only ran one query:
 
 ## Displaying trees on a map
 
-Finally, I demonstrated a simple Django view and template that could display some of the trees on a map. `trees/views.py` looked like this:
+I built a simple Django view and template that could display some of the trees on a map, using [Leaflet](https://github.com/Leaflet/Leaflet.markercluster) and [Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster). `trees/views.py` looked like this:
 
     from django.shortcuts import render
     from .models import Tree
