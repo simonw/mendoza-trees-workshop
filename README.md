@@ -71,7 +71,7 @@ This starts a Juyter notebook instance that is already configured to talk to you
 
 I chose `New Notebook -> Django Shell-Plus`.
 
-See my `Import-Trees-from-CSV` notebook for the next steps.
+See my [Import-Trees-from-CSV](https://github.com/simonw/mendoza-trees-workshop/blob/master/Import-Trees-from-CSV.ipynb) notebook for the next steps.
 
 ## Showing the trees in the Django Admin
 
@@ -106,7 +106,7 @@ I carried out the above steps while the import script was still running in Jupyt
 
 ## Playing with the Django ORM in Jupyter
 
-Having loaded all of the trees, I used Jupyter to demonstrate some features of the Django ORM. The full notebook is `Trees-Django-ORM`. The highlights were:
+Having loaded all of the trees, I used Jupyter to demonstrate some features of the Django ORM. The full notebook is [Trees-Django-ORM](https://github.com/simonw/mendoza-trees-workshop/blob/master/Trees-Django-ORM.ipynb). The highlights were:
 
     from trees.models import Species, Tree
     from django.db.models import Count
